@@ -1,0 +1,9 @@
+<h3>databinding works!</h3>
+
+{{ 'Server' }} id: {{serverId}} status is: {{getServerStatus()}}
+
+<p>property-binding works!</p>
+<button [disabled]="!enableButton" class="btn btn-primary" (click)="createServer()">Create Server</button>
+<div [innerText]="enableButton"></div>
+<div>{{serverCreateMsg}}</div>
+---------------------------
