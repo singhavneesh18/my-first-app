@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { ServerAttributeComponent } from './server-attribute/server-attribute.component';
@@ -9,6 +9,7 @@ import { Assignment1Component } from './assignment1/assignment1.component';
 import { SuccessComponent } from './assignment1/success/success.component';
 import { WarningComponent } from './assignment1/warning/warning.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { Assignment2Component } from './assignment2/assignment2.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import { DatabindingComponent } from './databinding/databinding.component';
     Assignment1Component,
     SuccessComponent,
     WarningComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    Assignment2Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
