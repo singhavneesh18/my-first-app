@@ -1,0 +1,4 @@
+<h3>Assignment2 here!</h3>
+<input type="text" [(ngModel)]= "username" (input)="inputEventTest($event)"><br>
+<p>Input username: {{username}}</p>
+<button class="btn btn-primary" [disabled]="username.length===0" (click)="clearInputField()">Clear Input field</button>
