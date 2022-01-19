@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="toggleDisplayText()">Diplay/Hide details</button>
+<div *ngIf="displayText">    Secret Phrase </div>
+<div *ngFor="let index of logDisplayTextChange" >
+    <span [ngStyle]="{backgroundColor: getBgColor(index)}" [ngClass]="{whiteText: index>5}">Button clicked at: {{index}}</span>
+</div>
+
+<div *ngFor="let timestamp of logDisplayTextChangeTimestamp; let i =index" >
+    <span [ngStyle]="{backgroundColor: getBgColor(i+1)}" [ngClass]="{whiteText: i>4}">Button clicked at: {{timestamp}}</span>
+</div>
