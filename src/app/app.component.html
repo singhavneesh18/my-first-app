@@ -1,13 +1,57 @@
-<div>
-<p (click)="displayOldData = !displayOldData" class="label label-info">Show/Hide old data</p>
-<div *ngIf="displayOldData">
-    <app-example1></app-example1>
-    <app-assignment1></app-assignment1>
-    <app-databinding></app-databinding>
-    <app-assignment2></app-assignment2>
-</div></div>
-<div>
-<p (click)="displayNewData = !displayNewData" class="label label-info">Show/Hide New data</p>
-<div *ngIf="displayNewData">
-    <app-assignment3></app-assignment3>
-</div></div>
+<div class="panel-group" id="toggle_group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#ex1" data-toggle="collapse" data-parent="#toggle_group">Example 1</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" id="ex1">
+            <app-example1></app-example1>
+            <app-assignment1></app-assignment1>
+            <app-databinding></app-databinding>
+            <app-assignment2></app-assignment2>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"> 
+                <a href="#ex2" data-toggle="collapse" data-parent="#toggle_group">Example 2</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" id="ex2">
+            <app-assignment3></app-assignment3>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#ex3" data-toggle="collapse" data-parent="#toggle_group">Assignment 3</a>
+            </h4>
+        </div>
+        <div class="panel panel-collape in" id="ex3">
+            <app-databinding2></app-databinding2>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

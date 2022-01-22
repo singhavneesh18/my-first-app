@@ -11,6 +11,7 @@ import { WarningComponent } from './assignment1/warning/warning.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment3Component } from './assignment3/assignment3.component';
+import { Databinding2Component } from './databinding2/databinding2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Assignment3Component } from './assignment3/assignment3.component';
     WarningComponent,
     DatabindingComponent,
     Assignment2Component,
-    Assignment3Component
+    Assignment3Component,
+    Databinding2Component
   ],
   imports: [
     BrowserModule, FormsModule
