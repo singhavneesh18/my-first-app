@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Server } from '../server.model';
+import { Server, ServerDetails } from '../server.model';
 
 @Component({
   selector: 'app-parent',
@@ -11,6 +11,8 @@ export class ParentComponent implements OnInit {
     new Server('server1', 'detail1'), new Server('server2', 'detail2'),
     new Server('server3', 'detail3'),new Server('server4', 'detail4'),
   ];
+
+  server: Server = new Server('', '');
 
   constructor() { }
 
@@ -24,5 +26,9 @@ export class ParentComponent implements OnInit {
   deleteServer(serverIndex: number) {
     this.servers.splice(serverIndex, 1);
   }
+
+  editServer(serverDetails: ServerDetails) {
+    this.server = serverDetails.server;
+   }
 
 }
