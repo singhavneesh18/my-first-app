@@ -1,0 +1,6 @@
+<div class="row" *ngFor="let server of servers; let i= index">
+    <div class="col-md-3"><label for="serverName">Server Name : </label>&nbsp;{{server.serverName}}</div>
+    <div class="col-md-3"><label for="serverDetail">Server Detail : </label>&nbsp;{{server.serverDetail}}</div>
+    <div class="col-md-1"><button class="btn btn-link"><span class="glyphicon glyphicon-pencil text-primary"></span></button></div>
+    <div class="col-md-1"><button class="btn btn-link" (click)="deleteServer.emit(i)"><span class="glyphicon glyphicon-minus text-danger"></span></button></div>
+</div>

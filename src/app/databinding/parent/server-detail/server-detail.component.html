@@ -1,0 +1,5 @@
+<label for="name">Server Name:</label>
+    <input type="text" #serverName placeholder="Server Name" (input)="checkBtnStatus(serverName, serverDetail)"><br>
+<label for="detail">Server Detail:</label>
+    <input type="text" #serverDetail placeholder="Server Detail" (input)="checkBtnStatus(serverName, serverDetail)"><br>
+<button class="btn btn-info" [disabled]="serverButtonDisabled" (click)="addServer(serverName, serverDetail)"> {{serverButtonDesc}} </button>

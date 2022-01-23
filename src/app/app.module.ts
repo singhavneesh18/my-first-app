@@ -12,6 +12,9 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment3Component } from './assignment3/assignment3.component';
 import { Databinding2Component } from './databinding2/databinding2.component';
+import { ParentComponent } from './databinding/parent/parent.component';
+import { ServerDetailComponent } from './databinding/parent/server-detail/server-detail.component';
+import { ServerListComponent } from './databinding/parent/server-list/server-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { Databinding2Component } from './databinding2/databinding2.component';
     DatabindingComponent,
     Assignment2Component,
     Assignment3Component,
-    Databinding2Component
+    Databinding2Component,
+    ParentComponent,
+    ServerDetailComponent,
+    ServerListComponent
   ],
   imports: [
     BrowserModule, FormsModule
