@@ -38,10 +38,25 @@
                 <a href="#ex4" data-toggle="collapse" data-parent="#toggle_group">Databinding</a>
             </h4>
         </div>
-        <div class="panel-collape in" id="ex4">
+        <div class="panel-collape collapse" id="ex4">
             <app-parent></app-parent>
         </div>
     </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#ex5" data-toggle="collapse" data-parent="#toggle_group">View Child Example</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" id="ex5">
+            <app-view-child-ex></app-view-child-ex>
+        </div>
+    </div>
+<hr>
+    <div *ngFor="let d of data">
+        11111 
+    </div>
+
 
 </div>
 

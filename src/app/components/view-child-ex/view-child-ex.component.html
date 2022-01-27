@@ -1,0 +1,14 @@
+<div class="col-ms-6">
+    <form action="#">
+        <input type="text" #username placeholder="Name"><br>
+        <input type="password" #pwd placeholder="password"><br>
+        <button class="btn btn-info" (click)="saveDetails()">Save</button>
+    </form>
+</div>
+<div class="col-ms-6">
+    <ul>
+        <li *ngFor="let user of userDetails">
+            {{user.usernmae}} --> {{user.pwd}}
+        </li>
+    </ul>
+</div>
